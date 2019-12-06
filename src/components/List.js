@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import CreateFormContainer from "./CreateFormContainer";
+import LoginFormContainer from "./LoginForm";
 
 class List extends Component {
   render() {
     return (
       <div>
+        {}
+        <LoginFormContainer />
         <CreateFormContainer />
         {this.props.images
           ? this.props.images.map(image => (

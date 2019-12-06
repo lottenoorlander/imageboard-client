@@ -1,23 +1,22 @@
 import React, { Component } from "react";
 
-class CreateForm extends Component {
+class LoginForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.onSubmit}>
+        <form onSubmit={onSubmit}>
           <input
+            name="email"
+            placeholder="email"
             onChange={this.props.onChange}
-            name="title"
-            value={this.props.values.title}
-            placeholder="title"
+            type="email"
           />
           <input
+            name="password"
+            placeholder="password"
             onChange={this.props.onChange}
-            name="url"
-            value={this.props.values.url}
-            placeholder="url"
+            type="password"
           />
-
           <input type="submit" value="Add" />
         </form>
       </div>
@@ -25,4 +24,4 @@ class CreateForm extends Component {
   }
 }
 
-export default CreateForm;
+export default LoginForm;
